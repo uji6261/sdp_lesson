@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    sdp_lesson:
+      name: sdp_lesson
+      libraries:
+        - glob:
+            include: ../src/sdp_lesson/transformations/**
+      catalog: workspace
+      channel: CURRENT
+      continuous: false
+      photon: true
+      root_path: ../src/sdp_lesson
+      schema: sdp_schema
+      serverless: true
